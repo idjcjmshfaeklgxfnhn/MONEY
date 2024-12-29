@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moulla</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #3498db;
+        }
+
+        .moulla-text {
+            font-size: 2rem;
+            color: #2ecc71;
+            cursor: pointer;
+        }
+
+        .moulla-text:hover {
+            color: #27ae60;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Moulla 💶💶💶</h1>
+
+    <p>Velkommen til <span class="moulla-text">💶 Moulla 💶</span>. Klikk på 💶 for å høre en lyd!</p>
+
+    <audio id="moullaAudio" src="moulla.mp3" preload="auto"></audio>
+
+    <script>
+        document.querySelector('.moulla-text').addEventListener('click', function() {
+            var audio = document.getElementById('moullaAudio');
+            audio.play();
+        });
+    </script>
+</body>
+</html>
